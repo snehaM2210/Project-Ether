@@ -31,5 +31,4 @@ function minmaxTemp(min,max){
     );
 }
 
-
 export default Weather;
