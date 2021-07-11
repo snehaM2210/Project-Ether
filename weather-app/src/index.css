@@ -5,12 +5,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("./assets/weatherBg.jpg");
-  background-size: cover;
+  background-image:url("./assets/weatherBg1.jpg");
+  /*backdrop-filter: blur(5px);*/
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@media (min-width:320px) and (max-width:1080px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  body {
+    background-size: 100vh;
+  }
+}
+
+@media (min-width:481px) and (max-width:1080px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  body {
+    background-size: 100vh;
+  }
+}
+
+@media (min-width:641px) and (max-width:1080px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  body {
+    background-size: 200%;
+  }
+}
+
+@media (min-width:961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  body {
+    background-size: 200%;
+  }
+}
+
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  body {
+    background-size: 100%;
+  }
+}
+
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+  body {
+    background-size: 100%;
+  }
 }
